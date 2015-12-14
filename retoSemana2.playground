@@ -2,6 +2,8 @@
 
 import UIKit
 
+//: Playground -  noun: a place where people can p
+
 var rangoNumeros = 0...100
 var div5 = 0
 var div2 = 0
@@ -14,20 +16,24 @@ for numero in rangoNumeros {
 	div5 = numero % 5
 
 	if div5 == 0 {
-		var textoDiv5 = "#Bingo!!!"
+		textoDiv5 = "#Bingo!!!"
+	}else{
+	    textoDiv5 = ""
 	}
 
 	div2 = numero % 2
 
 	if div2 == 0 {
-	 var textoDiv2 = "#par!!!"
+	textoDiv2 = "#par!!!"
 	}else{
 		textoDiv2 = "#impar!!!"
 	}
 
 	if numero >= 30 && numero <= 40 {
 		textoRango = "#Viva Swift!!!"
+	}else{
+	    textoRango = ""
 	}
 
-	print(numero + textDiv5 + textoDiv2 + TextoRango)
+	print("\(numero) \(textoDiv5) \(textoDiv2)  \(textoRango)")
 }
